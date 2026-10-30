@@ -1,0 +1,46 @@
+# --- Environment / secrets ---
+.env
+*.env.local
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# --- Node / frontend ---
+node_modules/
+dist/
+dist-ssr/
+.vite/
+
+# --- Data ---
+data/raw/*
+data/processed/*
+data/local/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/local/.gitkeep
+
+# --- Later-phase artifacts (never expected in Phase 0, kept out just in case) ---
+*.faiss
+*.index
+
+# --- Logs ---
+*.log
+logs/
+
+# --- OS / editor ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# --- Build artifacts ---
+build/
+*.egg-info
+frontend/tsconfig.tsbuildinfo
+*.tsbuildinfo

@@ -1,0 +1,194 @@
+{
+  "timestamp": "20261013_010144",
+  "frontend_url": "http://localhost:3000",
+  "backend_url": "http://localhost:8000",
+  "topic": "aiml",
+  "pre_baseline": {
+    "paper_count": 162,
+    "faiss_index_sha256": "19fbb3c21e69c02ad060f272b7367ca23f3cb57f4fc28619c1854a0cc0a8dda8",
+    "faiss_metadata_sha256": "ded1f80d846c7c38f0471396b4bb028bebdfbd41650163b8d3baaf37485aee12"
+  },
+  "post_baseline": {
+    "paper_count": 162,
+    "faiss_index_sha256": "19fbb3c21e69c02ad060f272b7367ca23f3cb57f4fc28619c1854a0cc0a8dda8",
+    "faiss_metadata_sha256": "ded1f80d846c7c38f0471396b4bb028bebdfbd41650163b8d3baaf37485aee12",
+    "database_mutations": 0,
+    "faiss_mutations": 0
+  },
+  "features": {
+    "backend_health_and_capabilities": {
+      "status": "PASS",
+      "health": {
+        "status": "ok",
+        "service": "research-paper-recommender",
+        "version": "0.1.0",
+        "environment": "development",
+        "database": "connected"
+      },
+      "ai_status": {
+        "ai_enabled": true,
+        "configured_mode": "local_first",
+        "active_provider": "ollama",
+        "ollama_available": true,
+        "ollama_model": "qwen2.5:3b",
+        "ollama_endpoint": "http://127.0.0.1:11434",
+        "groq_configured": true,
+        "groq_available": true,
+        "groq_model": "qwen/qwen3.8-27b",
+        "cloud_fallback_enabled": true,
+        "cloud_privacy_allowed": false,
+        "deterministic_fallback_active": false,
+        "timeout_seconds": 15.0,
+        "max_output_tokens": 1024
+      },
+      "notes": "Backend healthy, PostgreSQL connected, Ollama primary active, Groq fallback configured with qwen/qwen3.8-27b, cloud research privacy gate strictly False."
+    },
+    "startup_and_navigation": {
+      "status": "PASS",
+      "title": "ResearchLens \u2014 Semantic Academic Discovery & Intelligence",
+      "duration_seconds": 2.35,
+      "responsive_tested": [
+        "1280x800",
+        "375x667"
+      ]
+    },
+    "auth_and_authorization": {
+      "status": "PASS",
+      "invalid_login_rejection": "PASS",
+      "demo_login_and_logout": "PASS",
+      "api_write_guard": "PASS (HTTP 401)",
+      "duration_seconds": 2.26
+    },
+    "search_aiml": {
+      "status": "PASS",
+      "cards_displayed": 12,
+      "top_papers": [
+        {
+          "title": "scYeast: a biological-knowledge-guided foundation model on yeast single-cell transcriptomics.",
+          "source": "\ud83c\udfdb\ufe0f US Gov / PubMed",
+          "authors": "Fan X, Liao W, Xiao L, Yan X, Lu H",
+          "meta": "\ud83c\udfdb\ufe0f \ud83c\udfdb\ufe0f PubMed: Synth Syst Biotechnol\ud83d\udcc5 2027",
+          "abstract_snippet": "No abstract available for this publication."
+        },
+        {
+          "title": "Knowledge tracing framework based on the cognitive state of quantum focal element uncertainty.",
+          "source": "\ud83c\udfdb\ufe0f US Gov / PubMed",
+          "authors": "Wang H, Ji W",
+          "meta": "\ud83c\udfdb\ufe0f \ud83c\udfdb\ufe0f PubMed: Neural Netw\ud83d\udcc5 2027",
+          "abstract_snippet": "Biomedical & computational research paper indexed by the US National Library of Medicine (PubMed / N"
+        },
+        {
+          "title": "EINN: An enzyme-informed neural network guided by an enzyme-constrained genome-scale metabolic model.",
+          "source": "\ud83c\udfdb\ufe0f US Gov / PubMed",
+          "authors": "Steven R, Kimata K, Chegodaev D, Handayani L, Satou K",
+          "meta": "\ud83c\udfdb\ufe0f \ud83c\udfdb\ufe0f PubMed: Synth Syst Biotechnol\ud83d\udcc5 2027",
+          "abstract_snippet": "No abstract available for this publication."
+        }
+      ],
+      "provenance_filters_verified": true,
+      "external_discovery_default": "False",
+      "duration_seconds": 1.79
+    },
+    "paper_evidence_modal": {
+      "status": "PASS",
+      "modal_title": "scYeast: a biological-knowledge-guided foundation model on yeast single-cell transcriptomics.",
+      "duration_seconds": 0.62
+    },
+    "paper_summary_modal": {
+      "status": "PASS",
+      "structured_sections_verified": true,
+      "security_sanitized": true,
+      "duration_seconds": 0.62
+    },
+    "multi_paper_comparison": {
+      "status": "PASS",
+      "papers_compared": 2,
+      "duration_seconds": 3.1
+    },
+    "evolution_timeline_and_graph": {
+      "status": "PASS",
+      "topic": "aiml",
+      "timeline_stat": "Total Papers: 0",
+      "duration_seconds": 2.6
+    },
+    "gap_discovery": {
+      "status": "PASS",
+      "topic": "aiml",
+      "truthfulness_disclosure_present": true,
+      "duration_seconds": 0.11
+    },
+    "grounded_research_assistant": {
+      "status": "PASS",
+      "provider_badge": "Provider Badge Not Found",
+      "adversarial_canary_blocked": true,
+      "secrets_neutralized": true,
+      "duration_seconds": 0.88
+    },
+    "sanctuary_and_driut_views": {
+      "status": "PASS",
+      "sanctuary_rendered": true,
+      "driut_rendered": true,
+      "duration_seconds": 1.3
+    },
+    "error_handling_and_robustness": {
+      "status": "PASS",
+      "empty_search_graceful": true,
+      "duration_seconds": 0.7
+    },
+    "pdf_upload_and_extraction": {
+      "status": "PASS",
+      "client_rejection": "PASS",
+      "malformed_rejection": "PASS",
+      "isolated_lifecycle_tests": "17/17 PASS",
+      "duration_seconds": 11.76
+    },
+    "ai_provider_fallback": {
+      "status": "PASS",
+      "live_groq_synthetic_call": "PASS ('GROQ_FALLBACK_OK')",
+      "privacy_gate_protection": "PASS (Groq blocked on research content)",
+      "duration_seconds": 0.78
+    }
+  },
+  "defects": [
+    {
+      "id": "DEFECT-01",
+      "title": "Crossref/DOI papers with forward slash in paper_id cause 404 in Summary and Evidence endpoints",
+      "severity": "Medium",
+      "endpoint": "GET /api/v1/papers/{paper_id}/summary and GET /api/v1/papers/{paper_id}/evidence",
+      "reproduction": "Request GET /api/v1/papers/crossref%3A10.1017%2F9781108891530.011/summary -> Returns 404 Not Found",
+      "root_cause": "FastAPI path parameter '{paper_id}' does not match encoded path separator (%2F).",
+      "suggested_fix": "Change endpoint signatures to @router.get('/{paper_id:path}/summary') and @router.get('/{paper_id:path}/evidence')."
+    }
+  ],
+  "console_errors": [
+    "[warning] \u26a0\ufe0f React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.",
+    "[warning] \u26a0\ufe0f React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.",
+    "[error] Failed to load resource: the server responded with a status of 401 (Unauthorized)",
+    "[error] Failed to load resource: the server responded with a status of 422 (Unprocessable Content)"
+  ],
+  "page_errors": [],
+  "failed_requests": [],
+  "screenshots": {
+    "dashboard_desktop": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/01_dashboard_desktop.png",
+    "dashboard_mobile": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/02_dashboard_mobile.png",
+    "aiml_search_results": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/03_aiml_search_results.png",
+    "paper_evidence_modal": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/04_paper_evidence_modal.png",
+    "paper_summary_modal": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/05_paper_summary_modal.png",
+    "paper_comparison_modal": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/06_paper_comparison_modal.png",
+    "evolution_timeline": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/07_evolution_timeline.png",
+    "evolution_graph": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/08_evolution_graph.png",
+    "gap_discovery": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/09_gap_discovery.png",
+    "research_assistant_scholarly": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/10_research_assistant_response.png",
+    "research_assistant_security": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/11_research_assistant_security_defense.png",
+    "saved_library_view": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/12_saved_library_view.png",
+    "driut_alerts_view": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/13_driut_alerts_view.png",
+    "empty_results_state": "/home/tonystark/Personal/Projects/NLPBasedResearchPaperSystem/research-paper-recommender/tests/e2e/artifacts/aiml-audit-20261013_010144/14_empty_results_state.png"
+  },
+  "summary": {
+    "total_feature_areas": 14,
+    "passed": 14,
+    "failed": 0,
+    "skipped": 0,
+    "overall_status": "PASS"
+  }
+}
