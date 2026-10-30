@@ -42,8 +42,9 @@ import type {
   AIProviderStatus,
 } from "../types/research";
 
-const API_BASE_URL: string =
+const RAW_API_BASE_URL: string =
   import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
+const API_BASE_URL: string = RAW_API_BASE_URL.replace(/\/+$/, "");
 
 const TOKEN_STORAGE_KEY = "research_auth_token";
 let inMemoryToken: string | null = null;

@@ -1,10 +1,12 @@
 /// <reference types="vitest" />
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import fs from "node:fs";
+import path from "node:path";
 
 export default defineConfig({
   plugins: [react()],
-  envDir: "../",
+  envDir: fs.existsSync(path.resolve(__dirname, "../.env")) ? "../" : "./",
   server: {
     host: true,
     port: 3001,
