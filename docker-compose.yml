@@ -24,7 +24,7 @@ services:
     environment:
       DATABASE_URL: ${DATABASE_URL:-postgresql+psycopg2://postgres:postgres@postgres:5432/research_papers}
       FRONTEND_URL: ${FRONTEND_URL:-http://localhost:3000}
-      CORS_ORIGINS: '["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:3001", "http://127.0.0.1:3001"]'
+      CORS_ORIGINS: ${CORS_ORIGINS:-'["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:3001", "http://127.0.0.1:3001", "https://nlp-reseach-suggestor.vercel.app"]'}
       ENABLE_DRIUT_SCHEDULER: ${ENABLE_DRIUT_SCHEDULER:-true}
       DRIUT_SCAN_INTERVAL_MINUTES: ${DRIUT_SCAN_INTERVAL_MINUTES:-60}
       TRUSTED_PROXIES: '["127.0.0.1","::1","testclient","frontend"]'
